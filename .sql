@@ -18,8 +18,8 @@ COUNT(testimonials."writerId") as "testimonialCount"
 FROM testimonials
 JOIN users
 ON testimonials."writerId" = users.id
-GROUP BY users.name
-ORDER BY "testimonialCount" DESC;
+WHERE users.id = 435
+GROUP BY users.name;
 
 -- Exercício 4
 
